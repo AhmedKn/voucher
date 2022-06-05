@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>accompte</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');        *{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');        
+*{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -37,7 +38,7 @@
         }
         .res-det{
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin: 0 0 10px 30px;
             border: 1px solid black;
             padding: 20px;
@@ -63,14 +64,19 @@
         .res-det div:nth-child(2){
             width: 25%;
         }
-        .res-det div:nth-child(3){
-            width: 15%;
+        .mover{
+            padding-top: 13px;
         }
-        .res-det div:nth-child(4){
-            width: 15%;
+        .table-sec{
+            width: 50%;
+            
         }
-        .res-det div:nth-child(5){
-            width: 15%;
+        table{
+            width: 100%;
+        }
+        td,th{
+            width: 25%;
+            text-align: center;
         }
         h3,h4{
             padding: 30px 0 10px 30px;
@@ -90,6 +96,7 @@
         }
         ol li{
             font-family: sans-serif;
+            width: 50%;
         }
         h5{
             font-family: 'Poppins', sans-serif;
@@ -97,33 +104,55 @@
             font-weight: 100;
             padding-top: 50px;
         }
+        .accompte{
+            width: 25%;
+        }
     </style>
 </head>
 <body>
     <img src="./logo.png" alt="silianos-logo" />
     <h2>Bon de reservation N°3659878 </h2>
+    <h3 class="stats">Non Payé</h3>
     <p class="code">Code Confidential:a331 </p>
     <div class="res-det">
-        <div>
+        <div class="mover">
             <p>Hotel</p>
             <p> mouradi</p>
         </div>
-        <div>
+        <div class="mover">
             <p>Type de Logement</p>
             <p>All In Soft</p>
         </div>
-        <div>
-            <p>Nombre de Chambre</p>
-            <p>1</p>
+        <div class="table-sec">
+            <table>
+                <tr>
+                    <th>Chambre</th>
+                    <th>Nombres adultes</th>
+                    <th>Nombres enfants -2ans</th>
+                    <th>Nombres enfants -12ans</th>
+                </tr>
+                <!-- Map here -->
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </table>
         </div>
-        <div>
-            <p>Nombre d'adulte</p>
-            <p>1</p>
-        </div>
-        <div>
-            <p>Nombre d'enfant</p>
-            <p>0</p>
-        </div>
+        
     </div>
     <div class="res-det">
         <div>
@@ -134,11 +163,11 @@
             <p>Check out</p>
             <p>16/05/2022</p>
         </div>
-        <div>
+        <div class="accompte">
             <p>Nombre de Nuits</p>
             <p>3</p>
         </div>
-        <div>
+        <div class="accompte">
             <p>Accompte</p>
             <p>200 DT</p>
         </div>
